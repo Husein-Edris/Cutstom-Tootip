@@ -1,0 +1,24 @@
+.animated-text {
+    overflow: hidden;
+    position: relative;
+}
+
+.animated-text::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    bottom: 6px;
+    width: 14px;
+    height: 2px;
+    background-color: #DAFDBA;
+    animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
